@@ -9,6 +9,7 @@
     "test": "ng test",
     "dev:ssr": "ng run appName:serve-ssr",
     "serve:ssr": "node dist/appName/server/main.js",
+    "serve:prerender": "http-server -c1 dist/appName/browser",
     "build:ssr": "ng build && ng run appName:server",
     "prerender": "ng run appName:prerender",
     "start": "npm run serve:ssr",
